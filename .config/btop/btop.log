@@ -1,0 +1,21 @@
+
+2022/06/07 (15:03:00) | ===> btop++ v.1.2.7
+2022/06/07 (15:03:00) | INFO: Logger set to DEBUG
+2022/06/07 (15:03:00) | DEBUG: Using locale en_US.UTF-8
+2022/06/07 (15:03:00) | INFO: Running on /dev/ttys001
+2022/06/07 (15:03:00) | DEBUG: get_sensors(): show_coretemp=1 check_temp=1
+2022/06/07 (15:03:00) | DEBUG: M1 sensors found
+2022/06/07 (15:04:26) | DEBUG: Loading theme file: /usr/local/share/btop/themes/tokyo-night.theme
+2022/06/07 (15:04:28) | DEBUG: Loading theme file: /usr/local/share/btop/themes/greyscale.theme
+2022/06/07 (15:04:28) | DEBUG: Loading theme file: /usr/local/share/btop/themes/dracula.theme
+2022/06/07 (15:04:41) | DEBUG: Loading theme file: /usr/local/share/btop/themes/dracula.theme
+2022/06/07 (15:04:42) | DEBUG: Loading theme file: /usr/local/share/btop/themes/dracula.theme
+2022/06/07 (15:04:44) | DEBUG: Loading theme file: /usr/local/share/btop/themes/dracula.theme
+2022/06/07 (15:04:45) | DEBUG: Loading theme file: /usr/local/share/btop/themes/dracula.theme
+
+2022/06/08 (09:28:25) | ===> btop++ v.1.2.7
+2022/06/08 (09:28:25) | INFO: Logger set to DEBUG
+2022/06/08 (09:28:25) | DEBUG: Using locale en_US.UTF-8
+2022/06/08 (09:28:25) | INFO: Running on /dev/ttys000
+2022/06/08 (09:28:25) | DEBUG: get_sensors(): show_coretemp=1 check_temp=1
+2022/06/08 (09:28:25) | DEBUG: M1 sensors found
