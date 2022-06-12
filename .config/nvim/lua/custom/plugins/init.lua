@@ -1,0 +1,8 @@
+--return {
+--  ["NvChad/nvterm"] = {
+--    config = function()
+--      require "plugins.configs.nvterm"
+--    end,
+--  },
+--}
+-- Above is an example of how to install custom plugins, DON'T forget to uncomment line in custom/chadrc.lua

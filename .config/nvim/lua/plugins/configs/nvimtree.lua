@@ -9,6 +9,7 @@ local options = {
       dotfiles = false,
       exclude = { "custom" },
    },
+   auto_reload_on_write = true,
    disable_netrw = true,
    hijack_netrw = true,
    ignore_ft_on_setup = { "alpha" },
@@ -23,7 +24,7 @@ local options = {
    view = {
       side = "left",
       width = 25,
-      hide_root_folder = true,
+      hide_root_folder = false,
    },
    git = {
       enable = false,
@@ -39,7 +40,7 @@ local options = {
       highlight_opened_files = "none",
 
       indent_markers = {
-         enable = false,
+         enable = true,
       },
       icons = {
          padding = " ",
