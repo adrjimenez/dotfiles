@@ -4,12 +4,13 @@ if not present then
    return
 end
 
+require("base46").load_highlight "nvimtree"
+
 local options = {
    filters = {
       dotfiles = false,
       exclude = { "custom" },
    },
-   auto_reload_on_write = true,
    disable_netrw = true,
    hijack_netrw = true,
    ignore_ft_on_setup = { "alpha" },
@@ -24,7 +25,7 @@ local options = {
    view = {
       side = "left",
       width = 25,
-      hide_root_folder = false,
+      hide_root_folder = true,
    },
    git = {
       enable = false,
@@ -40,7 +41,7 @@ local options = {
       highlight_opened_files = "none",
 
       indent_markers = {
-         enable = true,
+         enable = false,
       },
       icons = {
          padding = " ",

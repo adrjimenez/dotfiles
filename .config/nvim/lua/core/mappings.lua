@@ -232,7 +232,7 @@ M.nvimtree = {
 
       -- focus
       ["<leader>e"] = { "<cmd> NvimTreeFocus <CR>", "   focus nvimtree" },
-  },
+   },
 }
 
 M.telescope = {

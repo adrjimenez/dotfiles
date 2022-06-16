@@ -1,31 +1,39 @@
--- Just an example, supposed to be placed in /lua/custom/
-
 local M = {}
-local pluginConfs = require "custom.plugins.configs"
+local override = require "custom.override"
 
--- make sure you maintain the structure of `core/default_config.lua` here,
--- example of changing theme:
-
-M.ui = {
-   theme = "chadracula",
-}
-
--- This sets my own mapping, need to figure out how to better manage this
-M.nvimtree = {
-  n = {
-    -- refresh
-    ["<C-r>"] = { "<cmd> NvimTreeRefresh <CR>", "   refresh nvimtree" },
-  },
-}
+M.mappings = require "custom.mappings"
 
 M.plugins = {
-  -- This installs custom plugins
-  --user = require "custom.plugins",
+  -- This loads custom options on default packages
+  options = {
+    lspconfig = {
+      setup_lspconf = "custom.plugins.lspconfig",
+    },
+
+    -- statusline = {
+    --   separator_style = "round",
+    -- },
+  },
+
   -- This overrides default nvchad plugin settings
   override = {
-      ["kyazdani42/nvim-tree.lua"] = pluginConfs.nvimtree,
-      ["goolord/alpha-nvim"] = pluginConfs.alpha,
-   },
+    ["nvim-treesitter/nvim-treesitter"] = override.treesitter,
+    ["kyazdani42/nvim-tree.lua"] = override.nvimtree,
+    --["goolord/alpha-nvim"] = override.alpha,
+  },
+
+  -- This installs custom plugins
+  user = require "custom.plugins",
+
+}
+
+M.ui = {
+  --theme = "tokyodark",
+  hl_override = {},
+  changed_themes = {},
+  theme = "chadracula",
+  theme_toggle = {"chadracula", "gruvchad"},
+  transparency = false,
 }
 
 return M
